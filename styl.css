@@ -316,6 +316,20 @@ html{
     /* margin-left: 45px; */
     font-size: 2rem;
 }
+.m-li{
+    /* display: none; */
+    position: absolute;
+    background-color: white;
+    height: 700px;
+    top: 0;
+    right: 0;
+    text-align: left;
+    z-index: 2;
+    align-items: left;
+    margin-top: 100px;
+    line-height: 2;
+    transition: width .4s ease;
+}
 
 
 
@@ -386,7 +400,8 @@ html{
     margin-top: 180px;
 }
 .star{
-    width: 100%;
+    width: 34rem;
+    margin-left: -81px;
 }
 .container {
     width: 100%;
@@ -394,12 +409,14 @@ html{
 .cake-s{
     width: 75%;
 }
-/* .f-r{
-  width: 100%;
-  padding-left: 160px;  
-} */
+.f-r{
+  width: 35.8rem;
+} 
 .a-s{
-    width: 100%;
+    width: 28rem;
+}
+.a-s p{
+    margin-left: -48px;
 }
 .sr-2{
     display: none;
@@ -423,5 +440,29 @@ html{
 }
 .zc{
     margin-top: -368px;
+}
+#mm{
+    margin-top: -18px;
+}
+.f-pg{
+    width: 36rem;
+}
+.f-l i{
+    display: block;
+}
+.m-li{
+    /* display: block; */
+    position: absolute;
+    background-color: white;
+    height: 700px;
+    width: 0;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    text-align: left;
+    z-index: 2;
+    align-items: left;
+    margin-top: 100px;
+    line-height: 2;
 }
 }
