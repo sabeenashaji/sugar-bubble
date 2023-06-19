@@ -60,9 +60,7 @@ hr{
     height: 5px;
     background: #ddd;
     border-radius: 5px;
-    position: absolute;
-    left: 4%;
-    right: 90%;
+    margin-top: .5rem;
     width: 180px;
 }
 .pro {
@@ -75,9 +73,6 @@ hr{
     height: 5px;
     background: #FF6B00;
     border-radius: 5px;
-    position: absolute;
-    left: 4%;
-    right: 90%;
 }
 .price{
     padding-top: 28px;
@@ -97,13 +92,15 @@ hr{
 } */
 .cake{
     display: grid;
-    grid-template-columns: repeat(3,325px);
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
     /* text-align: center; */
     margin-left: 228px;
+    width: 100%;
 }
 .a1{
     /* justify-content: space-between; */
     display: flex;
+    gap: 3rem;
 }
 .cake p{
     padding-top: 10px;
@@ -175,6 +172,66 @@ hr{
 #abcd{
     display: none;
 }
+.cake{
+    margin: 0;
+    display: grid !important;
+}
+.cake *{
+    max-width: fit-content;
+}
+#mobilemenu{
+    position: absolute;
+    padding: .5rem;
+    margin: 1.5rem;
+    top: 0;
+    left: 0;
+    display: none;
+}.hidden-box {
+    position: fixed;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 0;
+    overflow: hidden;
+    z-index: 99;
+    background-color: #FFF3EA;
+    transition: width .4s ease-in-out;
+    box-shadow: 4.7px 0.4px 1.9px rgba(0, 0, 0, 0.031), 10.9px 1px 4.3px rgba(0, 0, 0, 0.045), 19.5px 1.7px 7.7px rgba(0, 0, 0, 0.055), 32.4px 2.9px 12.8px rgba(0, 0, 0, 0.065), 53.4px 4.8px 21.2px rgba(0, 0, 0, 0.075), 93.4px 8.3px 37px rgba(0, 0, 0, 0.089), 202px 18px 80px rgba(0, 0, 0, 0.12); }
+  
+  .hidden-menu {
+    padding: 2rem 0rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #FF6B00;
+    letter-spacing: 10px; }
+  
+  .hidden-list ul {
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    height: 40vh;
+    line-height: 4;
+    display: grid;
+    padding: 2rem 0rem 0rem 0rem;
+    place-content: center; }
+  
+  .hidden-list ul li a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: #FF6B00;
+    font-weight: 500; }
+  
+  .hidden-close {
+    margin-top: -1.5rem;
+    text-align: center;
+    z-index: 999; }
+  
+  .hidden-close i {
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.631); }
+  
+  .hidden-box.hidden {
+    width: 70% !important; }
 
 
 
@@ -182,10 +239,17 @@ hr{
   .cake{
     display: grid;
     grid-template-columns: repeat(1,325px);
-    margin-left: 90px;
+    justify-content: center;
+    place-items: center;
   }  
   .list li{
     display: none;
+  }
+  #mobilemenu{
+    display: block;
+  }
+  .f-l{
+    justify-content: center;
   }
   .aw{
     display: none;
@@ -193,17 +257,16 @@ hr{
   #abc{
     display: none;
   }
-  .a1{
-    margin-left: -8rem;
-  }
   .f-pg{
     display: none;
   }
   #abcd{
-    width: 50px;
-    background-color: aqua;
+    /* width: 50px; */
     text-align: center;
     display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem 0rem;
   }
 }
  

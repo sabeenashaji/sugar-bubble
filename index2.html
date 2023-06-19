@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sugar Bubble</title>
     <link rel="stylesheet" href="styl2.css">
-
     <link href="https://api.fontshare.com/v2/css?f[]=bonny@700,300,500,400,100,1&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/182603b8d9.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/182603b8d9.js" crossorigin="anonymous"></script>
@@ -14,7 +13,8 @@
 <body>
     <header class="container">
         <div class="f-l">
-            <h1> <a href="./index.html">sugar bubble </a></h1>
+            <i class="fa-solid fa-bars" style="color: #ff8800;" id="mobilemenu"></i>
+            <h1> <a href="./index.html">Sugar bubble </a></h1>
                 <nav>
                     <ul class="list">
                         <li><a id="menu" href="">MENU</a></li>
@@ -29,6 +29,22 @@
                 </div>
         </div>   
     </header>
+    <div class="hidden-box" id="hidden-div">
+        <div class="hidden-menu">
+            <h1>MENU</h1>
+        </div>
+        <div class="hidden-list">
+            <ul>
+                <li><a href="./index2.html">Cakes</a></li>
+                <li><a href="#">Muffins</a></li>
+                <li><a href="#">CupCakes</a></li>
+                <li><a href="#">Popsicle</a></li>
+            </ul>
+        </div>
+        <div class="hidden-close">
+            <i id="mmm" class="fa-regular fa-circle-xmark"></i>
+        </div>
+    </div>   
     <section class="container a1">
         <div class="aw">
             <div class="s-t">
@@ -142,5 +158,6 @@
         </div>
 </div>   
     </footer>
+    <script src="./script.js"></script>
 </body>
 </html>
